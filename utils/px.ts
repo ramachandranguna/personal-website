@@ -1,0 +1,1 @@
+export default (n: any) => typeof n === 'number' ? n + 'px' : n
