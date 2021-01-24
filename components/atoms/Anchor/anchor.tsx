@@ -13,6 +13,8 @@ import {
   BorderProps,
   typography,
   TypographyProps,
+  flexbox,
+  FlexboxProps,
 } from "styled-system";
 
 export interface AnchorProps
@@ -22,7 +24,8 @@ export interface AnchorProps
     ColorProps,
     BackgroundProps,
     BorderProps,
-    TypographyProps {
+    TypographyProps,
+    FlexboxProps {
   color?: any;
   as?: any;
   children?: React.ReactNode;
@@ -35,6 +38,8 @@ const StyledAnchor = styled.a<AnchorProps>`
     ${background}
     ${border}
     ${typography}
+    ${flexbox}
+    text-decoration:none
 `;
 
 export const Anchor = ({ children, href = "#", ...props }: AnchorProps) => {

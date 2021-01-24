@@ -6,8 +6,10 @@ import {
   color,
   layout,
   LayoutProps,
+  flexbox,
+  FlexboxProps,
 } from "styled-system";
-interface ListProps extends SpaceProps, ColorProps, LayoutProps {
+interface ListProps extends SpaceProps, ColorProps, LayoutProps, FlexboxProps {
   children?: React.ReactNode;
   as?: any;
 }
@@ -17,6 +19,7 @@ const StyledList = styled.li<ListProps>`
   ${space}
   ${color}
   ${layout}
+  ${flexbox}
 `;
 
 export const List: React.FC<ListProps> = ({

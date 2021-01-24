@@ -9,7 +9,7 @@ interface BaseLayoutProps extends BoxProps {
 }
 
 export const BaseLayout = ({ children }: BaseLayoutProps) => (
-  <Box as="main" width="100vw" height="100vh" gridGap={10}>
+  <Box as="main">
     <Head>
       <title>Ramachandran G</title>
       <meta charSet="utf-8" />

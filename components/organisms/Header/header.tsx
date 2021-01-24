@@ -1,5 +1,7 @@
 import { List } from "components/molecules";
 import React from "react";
+import { Github } from "@styled-icons/remix-line";
+
 import { Flex, FlexProps, Box, ListItem, Anchor } from "../../atoms";
 
 interface HeaderProps extends FlexProps {}
@@ -16,10 +18,23 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => (
   >
     <Box>Left</Box>
     <Box>
-      <List display="flex">
-        <ListItem p="20px">Test</ListItem>
+      <List display="flex" justifyContent="center" alignItems="center">
         <ListItem p="20px">
-          <Anchor>Test</Anchor>
+          <Anchor href="/blogs" color="black" fontSize="18px">
+            Blogs
+          </Anchor>
+        </ListItem>
+        <ListItem p="20px">
+          <Anchor
+            href="https://github.com/ramachandranguna/"
+            target="_blank"
+            color="black"
+            fontSize="18px"
+            display="flex"
+            alignItems="center"
+          >
+            Github <Github width="24px" height="24px" />
+          </Anchor>
         </ListItem>
       </List>
     </Box>
