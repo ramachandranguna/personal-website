@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SpaceProps, space, ColorProps, color } from "styled-system";
-interface ListItemProps extends SpaceProps, ColorProps {
+export interface ListItemProps extends SpaceProps, ColorProps {
   children?: React.ReactNode;
   as?: any;
 }

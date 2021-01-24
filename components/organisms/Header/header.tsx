@@ -1,6 +1,6 @@
 import { List } from "components/molecules";
 import React from "react";
-import { Flex, FlexProps, Box, ListItem } from "../../atoms";
+import { Flex, FlexProps, Box, ListItem, Anchor } from "../../atoms";
 
 interface HeaderProps extends FlexProps {}
 
@@ -16,9 +16,11 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => (
   >
     <Box>Left</Box>
     <Box>
-      <List>
-        <ListItem>Test</ListItem>
-        <ListItem>Test</ListItem>
+      <List display="flex">
+        <ListItem p="20px">Test</ListItem>
+        <ListItem p="20px">
+          <Anchor>Test</Anchor>
+        </ListItem>
       </List>
     </Box>
   </Flex>
