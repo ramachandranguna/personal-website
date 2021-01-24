@@ -19,7 +19,7 @@ const getTheme = (mode: string) => {
 };
 
 const IndexPage = () => {
-  const [mode, setMode] = useState(modes[0]);
+  const [mode] = useState(modes[0]);
   const theme = getTheme(mode);
   return (
     <ThemeProvider theme={theme}>
