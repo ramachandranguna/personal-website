@@ -1,4 +1,4 @@
-export * from './box';
-export * from './flex';
+export * from './Box';
+export * from './Flex';
 export * from './ListItem';
 export * from './Anchor';
