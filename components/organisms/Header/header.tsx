@@ -14,13 +14,12 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => (
     maxWidth="1080px"
     margin="auto"
     flexDirection="row"
-    justifyContent="space-between"
+    justifyContent="flex-end"
   >
-    <Box>Left</Box>
     <Box>
       <List display="flex" justifyContent="center" alignItems="center">
         <ListItem p="20px">
-          <Anchor href="/blogs" color="black" fontSize="18px">
+          <Anchor href="/blogs" color="primary" fontSize="h5" fontWeight="bold">
             Blogs
           </Anchor>
         </ListItem>
@@ -29,11 +28,10 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => (
             href="https://github.com/ramachandranguna/"
             target="_blank"
             color="black"
-            fontSize="18px"
-            display="flex"
-            alignItems="center"
+            fontSize="h5"
+            fontWeight="bold"
           >
-            Github <Github width="24px" height="24px" />
+            <Github width="24px" color="primary" height="24px" />
           </Anchor>
         </ListItem>
       </List>

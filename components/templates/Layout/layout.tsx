@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { ReactNode } from "react";
 import { Box, BoxProps } from "../../atoms";
-import Footer from "../../organisms/Footer/footer";
+// import Footer from "../../organisms/Footer/footer";
 import Header from "../../organisms/Header/header";
 
 interface BaseLayoutProps extends BoxProps {
@@ -9,7 +9,7 @@ interface BaseLayoutProps extends BoxProps {
 }
 
 export const BaseLayout = ({ children }: BaseLayoutProps) => (
-  <Box as="main">
+  <Box as="main" backgroundColor="background">
     <Head>
       <title>Ramachandran G</title>
       <meta charSet="utf-8" />
@@ -17,6 +17,6 @@ export const BaseLayout = ({ children }: BaseLayoutProps) => (
     </Head>
     <Header></Header>
     {children}
-    <Footer></Footer>
+    {/* <Footer></Footer> */}
   </Box>
 );
