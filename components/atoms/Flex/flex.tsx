@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box, BoxProps } from "../box";
+import { Box, BoxProps } from "../Box";
 import { flexbox, FlexboxProps } from "styled-system";
 
 export interface FlexProps extends BoxProps, FlexboxProps {}
