@@ -8,15 +8,17 @@ interface BaseLayoutProps extends BoxProps {
   children?: ReactNode;
 }
 
-export const BaseLayout = ({ children }: BaseLayoutProps) => (
+export const BaseLayout = ({ children, ...props }: BaseLayoutProps) => (
   <Box as="main" backgroundColor="background">
-    <Head>
-      <title>Ramachandran G</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <Header></Header>
-    {children}
-    {/* <Footer></Footer> */}
+    <Box display="block" as="page" maxWidth="1080px" margin="0 auto" {...props}>
+      <Head>
+        <title>Ramachandran G</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Header></Header>
+      {children}
+      {/* <Footer></Footer> */}
+    </Box>
   </Box>
 );

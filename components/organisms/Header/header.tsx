@@ -11,8 +11,6 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => (
     as="header"
     {...props}
     alignItems="center"
-    maxWidth="1080px"
-    margin="auto"
     flexDirection="row"
     justifyContent="flex-end"
   >
