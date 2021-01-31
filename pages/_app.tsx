@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const theme = getTheme(mode);
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} theme={theme} />
+      <Component theme={theme} {...pageProps} />
     </ThemeProvider>
   );
 }
